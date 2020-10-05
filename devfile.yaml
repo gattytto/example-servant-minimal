@@ -1,0 +1,17 @@
+apiVersion: 1.0.0
+metadata:
+ name: haskell
+projects:
+  - name: gopos
+    source:
+      location: 'git@github.com:gattytto/example-servant-minimal.git'
+      type: git
+    clonePath: src/github.com/gattytto/example-servant-minimal  
+components:
+  - preferences:
+      haskell.languageServerVariant: haskell-language-server
+    type: chePlugin
+    reference: 'https://github.com/gattytto/cheplugins/raw/master/haskell/meta.yaml'
+    alias: haskell
+  - id: eclipse/che-theia/next
+    type: cheEditor
