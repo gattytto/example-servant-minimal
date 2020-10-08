@@ -9,9 +9,9 @@ projects:
     clonePath: src/github.com/gattytto/example-servant-minimal  
 components:
   - preferences:
-      haskell.languageServerVariant: haskell-language-server
+      haskell.languageServerVariant: ghcide
     type: chePlugin
-    reference: 'https://github.com/gattytto/cheplugins/raw/master/haskell/meta.yaml'
+    reference: 'https://github.com/gattytto/cheplugins/raw/master/haskell/meta-dap.yaml'
     alias: haskell
   - id: eclipse/che-theia/next
     type: cheEditor
