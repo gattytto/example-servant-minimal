@@ -1,4 +1,4 @@
-[![Contribute](https://www.eclipse.org/che/factory-contribute.svg)](che.openshift.io/f?url=https://raw.githubusercontent.com/gattytto/example-servant-minimal/ghci-dap/devfile.yaml) [![Contribute](https://www.eclipse.org/che/factory-contribute.svg)](https://che.openshift.io/f?url=https://github.com/gattytto/example-servant-minimal/blob/ghci-dap)
+[![Contribute](https://www.eclipse.org/che/factory-contribute.svg)](che.openshift.io/f?url=https://raw.githubusercontent.com/gattytto/example-servant-minimal/ghci-dap/devfile.yaml) [![Contribute](https://www.eclipse.org/che/factory-contribute.svg)](https://che.openshift.io/f?url=https://github.com/gattytto/example-servant-minimal/tree/ghci-dap)
 
 This is a very minimal example of a project that uses
 
