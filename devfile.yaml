@@ -6,6 +6,7 @@ projects:
     source:
       location: 'git@github.com:gattytto/example-servant-minimal.git'
       type: git
+      branch: ghci-dap
     clonePath: src/github.com/gattytto/example-servant-minimal  
 components:
   - preferences:
