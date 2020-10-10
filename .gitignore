@@ -1,2 +1,6 @@
 .stack-work/
 example-servant-minimal.cabal
+*.lock
+.vscode/
+dist-newstyle/
+.theia/
