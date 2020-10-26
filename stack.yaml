@@ -1,6 +1,10 @@
 resolver: ghc-8.10.1
 system-ghc: true
 allow-newer: true
+jobs: 1
+ghc-options:
+  aeson:
+    '"+RTS -M2000M -RTS"'
 packages:
   - '.'
 extra-deps: 
