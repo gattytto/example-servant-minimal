@@ -1,4 +1,4 @@
- [![Contribute](https://www.eclipse.org/che/factory-contribute.svg)](che.openshift.io/f?url=https://raw.githubusercontent.com/gattytto/example-servant-minimal/master/devfile.yaml) [![Contribute](https://www.eclipse.org/che/factory-contribute.svg)](https://che.openshift.io/f?url=https://github.com/gattytto/example-servant-minimal)
+ [![Contribute](https://www.eclipse.org/che/factory-contribute.svg)](che.openshift.io/f?url=https://raw.githubusercontent.com/gattytto/example-servant-minimal/8.8.4/devfile.yaml) [![Contribute](https://www.eclipse.org/che/factory-contribute.svg)](https://che.openshift.io/f?url=https://github.com/gattytto/example-servant-minimal/tree/8.8.4)
 
 This is a very minimal example of a project that uses
 
