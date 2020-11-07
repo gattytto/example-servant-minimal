@@ -1,17 +1,18 @@
 apiVersion: 1.0.0
 metadata:
- name: haskell
+  name: haskell
 projects:
   - name: example
     source:
       location: 'git@github.com:gattytto/example-servant-minimal.git'
       type: git
-    clonePath: src/github.com/gattytto/example-servant-minimal  
+      branch: 8.10.2
+    clonePath: src/github.com/gattytto/example-servant-minimal
 components:
   - preferences:
       haskell.languageServerVariant: haskell-language-server
     type: chePlugin
-    reference: 'https://github.com/gattytto/cheplugins/raw/master/haskell/meta.yaml'
+    reference: 'https://raw.githubusercontent.com/eclipse/che-plugin-registry/master/v3/plugins/haskell/vscode-haskell/8.10.2/meta.yaml'
     alias: haskell
   - id: eclipse/che-theia/next
     type: cheEditor
