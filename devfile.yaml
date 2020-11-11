@@ -4,15 +4,65 @@ metadata:
 projects:
   - name: example
     source:
-      location: 'git@github.com:gattytto/example-servant-minimal.git'
+      location: 'https://github.com/che-samples/haskell-demo.git'
       type: git
-      branch: 8.10.2
-    clonePath: src/github.com/gattytto/example-servant-minimal
+    clonePath: src/github.com/che-samples/haskell-demo
 components:
   - preferences:
-      haskell.languageServerVariant: haskell-language-server
+      haskell.languageServerVariant: ghcide
     type: chePlugin
-    reference: 'https://raw.githubusercontent.com/eclipse/che-plugin-registry/master/v3/plugins/haskell/vscode-haskell/8.10.2/meta.yaml'
-    alias: haskell
+    id: haskell/vscode-haskell/8.10.2
   - id: eclipse/che-theia/next
     type: cheEditor
+commands: 
+  - name: Attach remote debugger
+    actions:
+    - type: vscode-launch
+      referenceContent: |
+                    
+        {
+          // Use IntelliSense to learn about possible attributes.
+          // Hover to view descriptions of existing attributes.
+          // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+          "version": "0.2.0",
+          "configurations": [
+              {
+                  "type": "ghc",
+                  "request": "launch",
+                  "name": "run",
+                  "internalConsoleOptions": "openOnSessionStart",
+                  "workspace": "${workspaceFolder}",
+                  "startup": "${workspaceFolder}/exe/Main.hs",
+                  "startupFunc": "main",
+                  "startupArgs": "",
+                  "stopOnEntry": false,
+                  "mainArgs": "",
+                  "ghciPrompt": "H>>= ",
+                  "ghciInitialPrompt": "Prelude>",
+                  "ghciCmd": "stack ghci --with-ghc=ghci-dap --no-load --no-build --main-is example-servant-minimal:exe:example-servant-minimal --ghci-options -fprint-evld-with-show",
+                  "ghciEnv": {},
+                  "logFile": "${workspaceFolder}/.vscode/phoityne.log",
+                  "logLevel": "DEBUG",
+                  "forceInspect": false
+              },
+              {
+                  "type": "ghc",
+                  "request": "launch",
+                  "name": "TEST",
+                  "internalConsoleOptions": "openOnSessionStart",
+                  "workspace": "${workspaceFolder}",
+                  "startup": "${workspaceFolder}/test/Spec.hs",
+                  "startupFunc": "",
+                  "startupArgs": "",
+                  "stopOnEntry": false,
+                  "mainArgs": "",
+                  "ghciPrompt": "H>>= ",
+                  "ghciInitialPrompt": "Prelude>",
+                  "ghciCmd": "stack --test ghci --with-ghc=ghci-dap --no-load --no-build --main-is example-servant-minimal:test:spec --ghci-options -fprint-evld-with-show",
+                  "ghciEnv": {},
+                  "logFile": "${workspaceFolder}/.vscode/phoityne.log",
+                  "logLevel": "WARNING",
+                  "forceInspect": false
+              }
+          ]
+      }
