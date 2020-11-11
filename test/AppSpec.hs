@@ -40,7 +40,7 @@ withClient x innerSpec =
     flip aroundWith innerSpec $ \ action -> \ httpManager -> do
       testWithApplication x $ \ port -> do
         let testBaseUrl = BaseUrl Http "localhost" port ""
-        action (ClientEnv httpManager testBaseUrl Nothing)
+        action (mkClientEnv httpManager testBaseUrl)
 
 type Host = (Manager, BaseUrl)
 
