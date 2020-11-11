@@ -117,12 +117,12 @@ packages:
   original:
     hackage: semigroupoids-5.3.4@sha256:120873dfa8084ec92745c766336e90d648c347ab99ce55329d5af36dbd3732ba,7596
 - completed:
-    hackage: servant-client-core-0.18@sha256:6702f04f3e5ac47abace5b26ab1948480437334747895407f0697502a403b96a,3593
+    hackage: servant-client-core-0.18.1@sha256:a116901bf2aa8b6ff63b1c8e24b34c4fe7c505682e9862f314c5bcd2f9279312,3763
     pantry-tree:
       size: 1444
-      sha256: 20f538ae12091696073a2ac5f3301a4a56686f5e2889b2a9e539c0d61a332cd1
+      sha256: 8a47f39a046ba959fc150c44a95cec46f41feec28970e11ec6397604e785d36f
   original:
-    hackage: servant-client-core-0.18@sha256:6702f04f3e5ac47abace5b26ab1948480437334747895407f0697502a403b96a,3593
+    hackage: servant-client-core-0.18.1
 - completed:
     hackage: hspec-2.7.4@sha256:8d0430e4a7ba8fa1482a1766fd4973f0c5e7c5adf512bded7358269bb9486c9e,1692
     pantry-tree:
@@ -138,33 +138,40 @@ packages:
   original:
     hackage: http-client-0.7.2.1@sha256:2550f699beeb445e55781f486f02d65a6c7180395cd052e3b0be65a563488174,5352
 - completed:
-    hackage: servant-client-0.18@sha256:3e3b8d145cf811e19849744ad305aa0bd42301d01ff75e1dac169bc9f5d18221,4589
+    hackage: servant-client-0.18.1@sha256:03d5628829331eaa72402e7c5cc059cff72cb91c34c5f10042fe09fd05454eb4,4745
     pantry-tree:
-      size: 1299
-      sha256: 445c610d83a6e356ed2a7808af8deac84708be3e44d38cbf76e60fd6105f9715
+      size: 1300
+      sha256: a8e23be4307bef89466b4dd60035980820566cf6142b74b29b120a60490dd851
   original:
-    hackage: servant-client-0.18@sha256:3e3b8d145cf811e19849744ad305aa0bd42301d01ff75e1dac169bc9f5d18221,4589
+    hackage: servant-client-0.18.1
 - completed:
     hackage: aeson-1.5.4.1@sha256:6e4da18b16c1a9fb399f5544a357be7c82fe7c4300197de64928cb527b67957a,6906
     pantry-tree:
       size: 39759
       sha256: a9e0bac9f9c77f8667b02359ab68c669af560d201f065f600708147c0ececdf0
   original:
-    hackage: aeson-1.5.4.1@sha256:6e4da18b16c1a9fb399f5544a357be7c82fe7c4300197de64928cb527b67957a,6906
+    hackage: aeson-1.5.4.1
 - completed:
-    hackage: servant-0.18@sha256:2b5c81089540c208b1945b5ca0c3551c862138d71b224a39fa275a62852a5c75,5068
+    hackage: servant-0.18.1@sha256:d322da8a5033203b3da510fdd41c949f61d25b7a2e3ab707035aef5484bbeb13,5273
     pantry-tree:
-      size: 2458
-      sha256: 701b6443e486601dd127b92a28ca052278dea8dc528f013781c1304826e117d8
+      size: 2594
+      sha256: 59fe629e1b6e92571e1b54a7028c09abfff655077361bedc0689bcaca30c7240
   original:
-    hackage: servant-0.18@sha256:2b5c81089540c208b1945b5ca0c3551c862138d71b224a39fa275a62852a5c75,5068
+    hackage: servant-0.18.1
 - completed:
-    hackage: servant-server-0.18@sha256:ec7f361bc9848968b1fff8091fa2213b721d3f47549421945c6a7ca1702e22e6,5424
+    hackage: servant-server-0.18.1@sha256:f0824cfa57b23b6b698dbd93e11598c4c5355aaa26121f48c091f6e5f03623fc,5665
     pantry-tree:
-      size: 2546
-      sha256: c2470cd8665742cee13faae1db7e3d49d70b027d57c4578e3f7ba66ffc8dc7b4
+      size: 2614
+      sha256: afba7a901c86dfe0c65d18470bca144b371cbff13d4fb516247b200fbd62597b
   original:
-    hackage: servant-server-0.18@sha256:ec7f361bc9848968b1fff8091fa2213b721d3f47549421945c6a7ca1702e22e6,5424
+    hackage: servant-server-0.18.1
+- completed:
+    hackage: sop-core-0.5.0.1@sha256:ad0f34a1a6cb26dd5ed8bf820f40dc4b6aac90cd696d48dc886a5748f3539ab4,2896
+    pantry-tree:
+      size: 766
+      sha256: f6e9f8344d82ef53d3588536f60bd0ab44ef04fdd305af4b1432d8b5766346f9
+  original:
+    hackage: sop-core-0.5.0.1@sha256:ad0f34a1a6cb26dd5ed8bf820f40dc4b6aac90cd696d48dc886a5748f3539ab4,2896
 - completed:
     hackage: wai-3.2.2.1@sha256:3f8fcbd4dec70fb549f1f9ec2b038df215a30afd74c01c1d36ecb85845115ba3,1765
     pantry-tree:
