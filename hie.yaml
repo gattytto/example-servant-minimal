@@ -1,1 +1,12 @@
-cradle: {stack: {}}
+cradle:
+  stack:
+    - path: "./exe"
+      component: "example-servant-minimal:lib"
+    - path: "./src"
+      component: "example-servant-minimal:lib"
+    - path: "./exe"
+      component: "example-servant-minimal:exe:example-servant-minimal"
+    - path: "./exe/Main.hs"
+      component: "example-servant-minimal:exe:example-servant-minimal"
+    - path: "./test"
+      component: "example-servant-minimal:test:spec"
