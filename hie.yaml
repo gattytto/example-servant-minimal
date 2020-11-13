@@ -10,3 +10,13 @@ cradle:
       component: "example-servant-minimal:exe:example-servant-minimal"
     - path: "./test"
       component: "example-servant-minimal:test:spec"
+  cabal:
+    - path: "./exe"
+      component: "example-servant-minimal:exe:example-servant-minimal"
+    - path: "./exe/Main.hs"
+      component: "example-servant-minimal:exe:example-servant-minimal"
+    - path: "./test"
+      component: "example-servant-minimal:test:spec"
+
+dependencies:
+  - package.yaml
