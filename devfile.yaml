@@ -4,63 +4,102 @@ metadata:
 projects:
   - name: example
     source:
+      location: 'git@github.com:gattytto/example-servant-minimal'
       type: github
-      location: 'https://www.github.com/che-samples/haskell-demo.git'
+      branch: 8.10.2
     clonePath: src/github.com/che-samples/haskell-demo
 components:
-  - preferences:
-      haskell.languageServerVariant: ghcide
-    reference: 'https://raw.githubusercontent.com/eclipse/che-plugin-registry/master/v3/plugins/haskell/vscode-haskell/8.10.2/meta.yaml'
-    alias: haskell
-    type: chePlugin
   - id: eclipse/che-theia/next
     type: cheEditor
-commands: 
+  - preferences:
+      haskell.languageServerVariant: ghcide
+    type: chePlugin
+    reference: 'https://raw.githubusercontent.com/eclipse/che-plugin-registry/master/v3/plugins/haskell/vscode-haskell/8.10.2/meta.yaml'
+    alias: haskell
+commands:
   - name: Attach remote debugger
     actions:
-    - type: vscode-launch
-      referenceContent: |
-        {
-          "version": "0.2.0",
-          "configurations": 
-            [
-              {
-                  "type": "ghc",
-                  "request": "launch",
-                  "name": "run",
-                  "internalConsoleOptions": "openOnSessionStart",
-                  "workspace": "${workspaceFolder}",
-                  "startup": "${workspaceFolder}/exe/Main.hs",
-                  "startupFunc": "main",
-                  "startupArgs": "",
-                  "stopOnEntry": false,
-                  "mainArgs": "",
-                  "ghciPrompt": "H>>= ",
-                  "ghciInitialPrompt": "Prelude>",
-                  "ghciCmd": "stack ghci --with-ghc=ghci-dap --no-load --no-build --main-is example-servant-minimal:exe:example-servant-minimal --ghci-options -fprint-evld-with-show",
-                  "ghciEnv": {},
-                  "logFile": "${workspaceFolder}/.vscode/phoityne.log",
-                  "logLevel": "DEBUG",
-                  "forceInspect": false
-              },
-              {
-                  "type": "ghc",
-                  "request": "launch",
-                  "name": "TEST",
-                  "internalConsoleOptions": "openOnSessionStart",
-                  "workspace": "${workspaceFolder}",
-                  "startup": "${workspaceFolder}/test/Spec.hs",
-                  "startupFunc": "",
-                  "startupArgs": "",
-                  "stopOnEntry": false,
-                  "mainArgs": "",
-                  "ghciPrompt": "H>>= ",
-                  "ghciInitialPrompt": "Prelude>",
-                  "ghciCmd": "stack --test ghci --with-ghc=ghci-dap --no-load --no-build --main-is example-servant-minimal:test:spec --ghci-options -fprint-evld-with-show",
-                  "ghciEnv": {},
-                  "logFile": "${workspaceFolder}/.vscode/phoityne.log",
-                  "logLevel": "WARNING",
-                  "forceInspect": false
-              }
-            ]
-        }
+      - referenceContent: |
+          {
+            "version": "0.2.0",
+            "configurations": 
+              [
+                {
+                    "type": "ghc",
+                    "request": "launch",
+                    "name": "stack-RUN",
+                    "internalConsoleOptions": "openOnSessionStart",
+                    "workspace": "${workspaceFolder}",
+                    "startup": "${workspaceFolder}/exe/Main.hs",
+                    "startupFunc": "main",
+                    "startupArgs": "",
+                    "stopOnEntry": false,
+                    "mainArgs": "",
+                    "ghciPrompt": "H>>= ",
+                    "ghciInitialPrompt": "Prelude>",
+                    "ghciCmd": "stack ghci --with-ghc=ghci-dap --no-load --no-build --main-is example-servant-minimal:exe:example-servant-minimal --ghci-options -fprint-evld-with-show",
+                    "ghciEnv": {},
+                    "logFile": "${workspaceFolder}/.vscode/phoityne.log",
+                    "logLevel": "DEBUG",
+                    "forceInspect": false
+                },
+                {
+                    "type": "ghc",
+                    "request": "launch",
+                    "name": "stack-TEST",
+                    "internalConsoleOptions": "openOnSessionStart",
+                    "workspace": "${workspaceFolder}",
+                    "startup": "${workspaceFolder}/test/Spec.hs",
+                    "startupFunc": "",
+                    "startupArgs": "",
+                    "stopOnEntry": false,
+                    "mainArgs": "",
+                    "ghciPrompt": "H>>= ",
+                    "ghciInitialPrompt": "Prelude>",
+                    "ghciCmd": "stack --test ghci --with-ghc=ghci-dap --no-load --no-build --main-is example-servant-minimal:test:spec --ghci-options -fprint-evld-with-show",
+                    "ghciEnv": {},
+                    "logFile": "${workspaceFolder}/.vscode/phoityne.log",
+                    "logLevel": "WARNING",
+                    "forceInspect": false
+                },
+                {
+                    "type": "ghc",
+                    "request": "launch",
+                    "name": "cabal-RUN",
+                    "internalConsoleOptions": "openOnSessionStart",
+                    "workspace": "${workspaceFolder}",
+                    "startup": "${workspaceFolder}/exe/Main.hs",
+                    "startupFunc": "",
+                    "startupArgs": "",
+                    "stopOnEntry": false,
+                    "mainArgs": "",
+                    "ghciPrompt": "H>>= ",
+                    "ghciInitialPrompt": "Prelude>",
+                    "ghciCmd": "cabal exec -- ghci-dap --interactive -i -i${workspaceFolder}",
+                    "ghciEnv": {},
+                    "logFile": "${workspaceFolder}/.vscode/phoityne.log",
+                    "logLevel": "DEBUG",
+                    "forceInspect": false
+                },
+                {
+                    "type": "ghc",
+                    "request": "launch",
+                    "name": "cabal-TEST",
+                    "internalConsoleOptions": "openOnSessionStart",
+                    "workspace": "${workspaceFolder}",
+                    "startup": "${workspaceFolder}/test/Spec.hs",
+                    "startupFunc": "",
+                    "startupArgs": "",
+                    "stopOnEntry": false,
+                    "mainArgs": "",
+                    "ghciPrompt": "H>>= ",
+                    "ghciInitialPrompt": "Prelude>",
+                    "ghciCmd": "cabal exec -- ghci-dap --interactive -i -i${workspaceFolder}",
+                    "ghciEnv": {},
+                    "logFile": "${workspaceFolder}/.vscode/phoityne.log",
+                    "logLevel": "WARNING",
+                    "forceInspect": false
+                }
+              ]
+          }
+        type: vscode-launch
