@@ -19,6 +19,5 @@ cradle:
       component: "example-servant-minimal:test:spec"
     - path: "./src/App.hs"
       component: "example-servant-minimal:exe:example-servant-minimal"
-
 dependencies:
   - package.yaml
