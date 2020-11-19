@@ -22,7 +22,6 @@ library:
 executables:
   example-servant-minimal:
     ghc-options: -threaded -j -rtsopts +RTS -A256M -RTS
-    jobs: 1
     main: exe/Main.hs
     dependencies:
       - example-servant-minimal
