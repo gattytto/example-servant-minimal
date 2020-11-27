@@ -21,7 +21,7 @@ library:
 
 executables:
   example-servant-minimal:
-    ghc-options: -threaded -j -rtsopts +RTS -A1500M -M1500M -RTS
+    ghc-options: -j -rtsopts +RTS -A1500M -M1500M -RTS
     main: exe/Main.hs
     dependencies:
       - example-servant-minimal
