@@ -14,8 +14,7 @@ components:
   - preferences:
       haskell.languageServerVariant: ghcide
     type: chePlugin
-    reference: 'https://raw.githubusercontent.com/eclipse/che-plugin-registry/master/v3/plugins/haskell/vscode-haskell/8.10.2/meta.yaml'
-    alias: haskell
+    id: haskell/vscode-haskell/latest
 commands:
   - name: Attach remote debugger
     actions:
