@@ -2,3 +2,4 @@
 example-servant-minimal.cabal
 dist-newstyle/
 .theia/launch.json
+.vscode/
