@@ -17,8 +17,12 @@ projects:
 components:
   - id: eclipse/che-theia/next
     type: cheEditor
+    cpuLimit: 200m
+    cpuRequest: 200m
   - preferences:
       haskell.languageServerVariant: ghcide
     type: chePlugin
     id: haskell/vscode-haskell/latest
+    cpuLimit: 200m
+    cpuRequest: 200m
 
