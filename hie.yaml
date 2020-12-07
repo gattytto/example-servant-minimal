@@ -25,7 +25,7 @@ cradle:
         cradle:
           direct:
             arguments:
-              - "-package Cabal"
-              - "-package base"
+              - "-package Cabal -j1"
+              - "-package base -j1"
 dependencies:
   - package.yaml
