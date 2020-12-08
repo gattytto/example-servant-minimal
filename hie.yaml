@@ -10,22 +10,4 @@ cradle:
       component: "example-servant-minimal:exe:example-servant-minimal"
     - path: "./test"
       component: "example-servant-minimal:test:spec"
-  cabal:
-    - path: "./exe"
-      component: "example-servant-minimal:exe:example-servant-minimal"
-    - path: "./exe/Main.hs"
-      component: "example-servant-minimal:exe:example-servant-minimal"
-    - path: "./test"
-      component: "example-servant-minimal:test:spec"
-    - path: "./src/App.hs"
-      component: "example-servant-minimal:exe:example-servant-minimal"
-  multi:
-    - path: './Setup.hs'
-      config:
-        cradle:
-          direct:
-            arguments:
-              - "-package Cabal -j1"
-              - "-package base -j1"
-dependencies:
-  - package.yaml
+  

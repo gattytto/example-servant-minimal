@@ -1,6 +1,6 @@
 name: example-servant-minimal
 
-ghc-options: -Wall
+ghc-options: -Wall -haddock
 
 tests:
   spec:

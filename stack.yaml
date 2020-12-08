@@ -5,6 +5,8 @@ jobs: 2
 ghc-options:
   aeson:
     '"+RTS -M1500M -RTS"'
+  "$everything":
+    "-haddock"
 packages:
   - '.'
 extra-deps: 
