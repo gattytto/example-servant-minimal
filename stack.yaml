@@ -1,4 +1,4 @@
-resolver: ghc-8.10.2
+resolver: ghc-8.10.3
 system-ghc: true
 allow-newer: true
 jobs: 2
