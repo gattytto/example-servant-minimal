@@ -6,7 +6,7 @@ projects:
     source:
       location: 'git@github.com:gattytto/example-servant-minimal'
       type: github
-      branch: 8.10.2
+      branch: 8.10.3
     clonePath: src/github.com/che-samples/haskell-demo
   - name: haskell-examples
     source:
@@ -22,7 +22,7 @@ components:
   - preferences:
       haskell.languageServerVariant: ghcide
     type: chePlugin
-    id: haskell/vscode-haskell/latest
+    reference: 'https://raw.githubusercontent.com/gattytto/cheplugins/master/haskell/meta-osio-8.10.3.yaml'
     cpuLimit: 4001m
     cpuRequest: 200m
 
